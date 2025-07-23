@@ -45,3 +45,26 @@ console.log(typeof n);
 //typeof
 console.log(typeof"123");  //string
 console.log(typeof true);  //boolean
+
+//conversion
+let id="123";
+let newId = Number(id);
+
+console.log(newId);
+console.log(typeof newId);
+
+
+//boolean to number
+let isLoggedin = true
+ isLoggedin = Number(isLoggedin);
+
+console.log(isLoggedin);
+console.log(typeof isLoggedin);
+
+// printing in one line.
+let usern ="ganesh";
+let age =34;
+let email ="sru@gmail.com";
+
+console.log("user is",usern, "and age is",age,"email is",email);
+console.log(`user is ${usern} and age ${age} and email is ${email}`)   //using backtick(``)
