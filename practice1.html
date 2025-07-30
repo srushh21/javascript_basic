@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> "Document"</title>
+</head>
+<body>
+    <h1 id ="first-heading">Hello World</h1>
+    <p class ="para">DOM learning is IMP </p>
+    <p class ="para">Welcome Home </p>
+    <p class ="para">Srushti Ghatage. </p>
+</body>
+<script>
+    // const firstH = document.getElementById('first-heading');
+    // firstH.style.cssText="color:red; fontSize :100px"
+    const para = document.querySelectorAll('.para')
+    console.log(para);
+    para[0].style.border = "solid";
+    para[0].style.padding = "10x";
+
+    para.forEach((val)=> {
+        val.style.color ="red"
+        val.style.backgroundColor ="yellow"
+    })
+    
+</script>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <button type ="submit" style="padding: 5px; border-radius:10px; font-size: 20p; text-align: center; color: red;">click me </button> 
+</body>
+<script>
+    const btn = document.getElementsByTagName('button');
+    console.log(btn);
+    btn[0].addEventListener('click',() => alert("srushti"))
+    
+</script>
+</html>

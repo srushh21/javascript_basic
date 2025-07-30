@@ -139,6 +139,12 @@
 
 //Reduce [method of array].
 const array =[10,20,30,40,50];
-const sum =array.reduce((acc,arr) => acc+arr,0);
-console.log(sum);
+// const sum =array.reduce((acc,arr) => acc+arr,0);
+// console.log(sum);
+const add = array.reduce((acc,currval)=>{
+    console.log(acc);
+    return acc + currval;
 
+    
+})
+console.log(add);
