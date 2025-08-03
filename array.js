@@ -6,12 +6,12 @@
 // console.log(typeof arraName);
 // console.log(arraName);
 
-// const arr=['arohi','tirtha',21]
-// const arr1=[3,5]
+// const arr=['arohi','srushti',21]
+//  const arr1=[3,5]
 // console.log(arr.length);            //length
 // console.log(arr.push(4));           //push
 // console.log(arr);
-// arr.pop(); //pop
+// arr.pop();                              //pop
 // console.log(arr.includes('arohi'));    //include
 // console.log(arr.indexOf(21));          //indexOf
 
@@ -26,9 +26,9 @@
 // console.log(Array.from(user1));
 
 
-// let n1=10;
-// let n2=23;
-// let n3=45;
+// // let n1=10;
+// // let n2=23;
+// // let n3=45;
 // console.log(Array.of(n1,n2,n3));
 
 
@@ -126,25 +126,25 @@
 
 
 //Reduce [method of array]
-// const fruits =['apple','banana','apple','orange','banana'];
-// const count = fruits.reduce((acc,fruit) =>
-// {
-//     acc[fruit] = (acc[fruit] || 0) +1;
-//     console.log(acc);
-//     return acc;
-    
-// },{});
-// console.log(count);
-
-
-//Reduce [method of array].
-const array =[10,20,30,40,50];
-// const sum =array.reduce((acc,arr) => acc+arr,0);
-// console.log(sum);
-const add = array.reduce((acc,currval)=>{
+const fruits =['apple','banana','apple','orange','banana'];
+const count = fruits.reduce((acc,fruit) =>
+{
+    acc[fruit] = (acc[fruit] || 0) +1;
     console.log(acc);
-    return acc + currval;
+    return acc;
+    
+},{});
+console.log(count);
+
+
+// //Reduce [method of array].
+// const array =[10,20,30,40,50];
+// // const sum =array.reduce((acc,arr) => acc+arr,0);
+// // console.log(sum);
+// const add = array.reduce((acc,currval)=>{
+//     console.log(acc);
+//     return acc + currval;
 
     
-})
-console.log(add);
+// })
+// console.log(add);

@@ -113,13 +113,26 @@
 // console.log(newArr);
 
 
-//map
-const Array =[1,2,3,4,5,6];
-const newArray = Array.map((val) => (val * 10));
-console.log(newArray);
+// //map
+// const Array =[1,2,3,4,5,6];
+// const newArray = Array.map((val) => (val * 10));
+// console.log(newArray);
 
 
-const stringArr =["sai","raj","radha","tara","sara"]
-const newstring = stringArr.map((val)=> (val.toUpperCase()));
-console.log(newstring);
+// const stringArr =["sai","raj","radha","tara","sara"]
+// const newstring = stringArr.map((val)=> (val.toUpperCase()));
+// console.log(newstring);
+
+
+
+// Function Callback
+function greet(Callback) {
+    console.log("Hello World");
+    Callback();
+}
+ function sayBye() {
+    console.log("goodBye");
+}
+greet(sayBye);
+ 
 

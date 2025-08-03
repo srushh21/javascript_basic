@@ -1,22 +1,22 @@
 ////Strings
-let userName ="sai";
-let userName1 = new String("sai");
-let num = new Number(10);
+// let userName ="sai";
+// let userName1 = new String("sai");
+// let num = new Number(10);
 
-console.log(typeof userName);
-console.log(typeof userName1);
-console.log(typeof num);
+// console.log(typeof userName);
+// console.log(typeof userName1);
+// console.log(typeof num);
 
 
-let user ="  sai  "
-console.log(user.length);  // to find length and length is a property.
-console.log(user.toLowerCase());  // to lowercase
-console.log(user.toUpperCase());  // to lowercase
-console.log(user.charAt(2));       //to find character at which index
-console.log(user.indexOf('i'));    //to find index of char
-console.log(user.indexOf('sai'));   //to find index of  full char it will give first letters index
-console.log(user.indexOf('a'));      
-console.log(user.indexOf('y'));      //if not present in string
+// let user ="  sai  "
+// console.log(user.length);  // to find length and length is a property.
+// console.log(user.toLowerCase());  // to lowercase
+// console.log(user.toUpperCase());  // to uppercase
+// console.log(user.charAt(2));       //to find character at which index
+// console.log(user.indexOf('i'));    //to find index of char
+// console.log(user.indexOf('sai'));   //to find index of  full char it will give first letters index
+// console.log(user.indexOf('a'));      
+// console.log(user.indexOf('y'));      //if not present in string
 
 
 
@@ -29,15 +29,21 @@ console.log(userr.includes('si'));   // checks if that char is there in string o
 console.log(userr.includes('ti'));
 
 
-let userrr ="  srushti%ghat%age "     // splits the string nto parts
+let userrr ="  srushti%ghat%age "     // splits the string into parts
 console.log(userrr.split('%'));
 
 
-let usser ="saideep"
-console.log(usser.substring(-4,5));       // starting char includes but ending char doesn't (i.e -1).
-console.log(usser.slice(-4,5));        
+// let usser ="saideep"
+// console.log(usser.substring(-4,5));       // starting char includes but ending char doesn't (i.e -1).
+// console.log(usser.slice(-4,5));        
 
 
+let str ="javascript";
+console.log(str.slice(0,5));    //slicing
+console.log(str.slice(-5,-3));
+
+
+console.log(str.substring(0,4));
 
 
 
