@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Assignment</title>
+  <style>
+    #img {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="first-heading">Click me to change text</h1>
+  <div id="container"></div>
+  <button onclick="addParagraph()">Add Paragraph</button>
+  <br><br>
+  <img id="img" src="https://via.placeholder.com/150" alt="Sample Image">
+  <button id="hideBtn">Hide Image</button>
+  <ul id="myList">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+  <button onclick="deleteItem()">Delete Last Item</button>
+  <form id="myForm">
+    <input type="text" id="nameInput" placeholder="Enter your name" required>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="greeting"></p>
+  <p>This is paragraph 1.</p>
+  <p>This is paragraph 2.</p>
+  <button onclick="changeColor()">Change Paragraph Color</button>
+
+  <!-- JavaScript -->
+  <script>
+    // 1. Change heading text on click
+    document.getElementById("first-heading").addEventListener("click", function () {
+      this.innerText = "Welcome to DOM World";
+    });
+
+    // 2. Add a paragraph to container
+    function addParagraph() {
+      const p = document.createElement("p");
+      p.innerText = "New Content";
+      document.getElementById("container").appendChild(p);
+    }
+
+    // 3. Hide the image
+    document.getElementById("hideBtn").addEventListener("click", function () {
+      document.getElementById("img").style.display = "none";
+    });
+
+    // 4. Add item to list
+    function addItem() {
+      const li = document.createElement("li");
+      li.innerText = "New Item";
+      document.getElementById("myList").appendChild(li);
+    }
+
+    // 5. Delete last item from list
+    function deleteItem() {
+      const list = document.getElementById("myList");
+      if (list.lastElementChild) {
+        list.removeChild(list.lastElementChild);
+      }
+    }
+
+    // 6 & 7. Form submission and greeting
+    document.getElementById("myForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Form submitted!");
+      const name = document.getElementById("nameInput").value;
+      document.getElementById("greeting").innerText = `Hello, ${name}!`;
+    });
+
+    // 8. Change all paragraph text color to green
+    function changeColor() {
+      document.querySelectorAll("p").forEach(p => {
+        p.style.color = "green";
+      });
+    }
+  </script>
+
+</body>
+</html>
